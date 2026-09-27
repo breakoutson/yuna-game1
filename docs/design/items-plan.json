@@ -1,0 +1,109 @@
+{
+  "_설명": "옷 아이템 데이터 설계 초안. categories/rarity/unlockTypes는 고정 분류, items는 샘플. attachTo는 앞서 정한 리그 관절 이름과 일치해야 함(clothing.js 참고).",
+
+  "categories": ["hair", "top", "bottom", "dress", "shoes", "accessory"],
+
+  "rarity": {
+    "common":  { "설명": "기본/초반 획득, 무채색~단색 위주" },
+    "rare":    { "설명": "패턴/투톤, 미니 미션 보상" },
+    "sparkly": { "설명": "반짝이 효과, 특별 이벤트나 여러 미션 완료 시" }
+  },
+
+  "unlockTypes": ["starter", "quest_reward", "seasonal_event"],
+
+  "items": [
+    {
+      "id": "hair_bob_black",
+      "category": "hair",
+      "name": "단발 헤어",
+      "attachTo": ["head"],
+      "rarity": "common",
+      "unlock": "starter",
+      "colorOptions": ["#241a12", "#4a2c1a", "#d8a458"]
+    },
+    {
+      "id": "hair_twintail_pink",
+      "category": "hair",
+      "name": "트윈테일",
+      "attachTo": ["head"],
+      "rarity": "rare",
+      "unlock": "quest_reward",
+      "colorOptions": ["#f2a6c6", "#a678d8"]
+    },
+    {
+      "id": "top_basic_tee",
+      "category": "top",
+      "name": "기본 티셔츠",
+      "attachTo": ["torso"],
+      "rarity": "common",
+      "unlock": "starter",
+      "colorOptions": ["#ffffff", "#f2c6d6", "#c6e2f2"]
+    },
+    {
+      "id": "dress_princess_pastel",
+      "category": "dress",
+      "name": "파스텔 공주 드레스",
+      "attachTo": ["hips"],
+      "strideScale": 0.42,
+      "rarity": "rare",
+      "unlock": "quest_reward",
+      "colorOptions": ["#f2a6c6", "#c6a6f2", "#a6d8f2"]
+    },
+    {
+      "id": "dress_sparkly_gala",
+      "category": "dress",
+      "name": "반짝이 갈라 드레스",
+      "attachTo": ["hips"],
+      "strideScale": 0.35,
+      "rarity": "sparkly",
+      "unlock": "seasonal_event",
+      "colorOptions": ["#f2d24a", "#e6e6fa"]
+    },
+    {
+      "id": "bottom_shorts_basic",
+      "category": "bottom",
+      "name": "기본 반바지",
+      "attachTo": ["leftHip", "rightHip"],
+      "strideScale": 1.0,
+      "rarity": "common",
+      "unlock": "starter",
+      "colorOptions": ["#2f6690", "#5a5a5a"]
+    },
+    {
+      "id": "accessory_cat_ears",
+      "category": "accessory",
+      "name": "고양이 귀 머리띠",
+      "attachTo": ["head"],
+      "rarity": "rare",
+      "unlock": "quest_reward",
+      "colorOptions": ["#241a12", "#f2c6d6"]
+    },
+    {
+      "id": "accessory_unicorn_horn",
+      "category": "accessory",
+      "name": "유니콘 뿔",
+      "attachTo": ["head"],
+      "rarity": "sparkly",
+      "unlock": "seasonal_event",
+      "colorOptions": ["#f2d24a", "#e6e6fa", "#f2a6c6"]
+    },
+    {
+      "id": "shoes_sneakers",
+      "category": "shoes",
+      "name": "기본 운동화",
+      "attachTo": ["leftKnee", "rightKnee"],
+      "rarity": "common",
+      "unlock": "starter",
+      "colorOptions": ["#ffffff", "#f2c6d6"]
+    },
+    {
+      "id": "shoes_mary_jane",
+      "category": "shoes",
+      "name": "메리제인 구두",
+      "attachTo": ["leftKnee", "rightKnee"],
+      "rarity": "rare",
+      "unlock": "quest_reward",
+      "colorOptions": ["#4a2c1a", "#241a12"]
+    }
+  ]
+}
